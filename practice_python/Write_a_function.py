@@ -10,11 +10,8 @@ def is_leap(year):
     leap = False
 
     # Write your logic here
-    if year % 4 is 0:
+    if year % 4 is 0 and year % 100 is not 0 or year % 400 is 0:
         leap = True
-        if year % 100 is 0:
-            leap = False
-            if year % 400 is 0:
-                leap = True
 
     return leap
+
