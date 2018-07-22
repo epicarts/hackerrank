@@ -1,11 +1,6 @@
 #-*- coding: utf-8 -*-
 #python3
 #Gregorian clendar 윤년계산
-
-
-year = int(input())
-print(is_leap(year))
-
 def is_leap(year):
     leap = False
 
@@ -15,3 +10,6 @@ def is_leap(year):
 
     return leap
 
+year = int(input())
+
+print(is_leap(year))
